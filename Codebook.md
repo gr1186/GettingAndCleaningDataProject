@@ -11,7 +11,7 @@ Columns with vague column names are corrected.
 A new dataset is generated with all the average measures for each subject and activity type (30 subjects * 6 activities = 180 rows). The output file is named averages_data.txt.
 
 
-Variables
+Applied Variables
 
 x_train, y_train, x_test, y_test, subject_train and subject_test contain the data from the downloaded files.
 
@@ -22,5 +22,5 @@ features contains the correct names for the x_data dataset, which are applied to
 A similar approach is taken with activity names through the activities variable.
 all_data merges x_data, y_data and subject_data in a big dataset.
 
-Averages_data contains the relevant averages which will be later stored in a .txt file. ddply() from the plyr package is used to apply colMeans() and ease the development.
+Averages_data contains the relevant averages which will be later stored in a .txt file. ddply() from the plyr package is used to apply colMeans()
 
